@@ -25,7 +25,7 @@ html {
 	height: 100%
 }
 body {
-	font-family: 'Twentieth Century MT', Arial, Helvetica, sans-serif;
+	font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
 	min-width: 992px;
 	color: #000;
 	background: #fff;
@@ -875,7 +875,8 @@ a.bag:hover {
 .block-subscribe label {
 	color: #ff0066;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 15px;
+	letter-spacing: 0.5px;
 	line-height: 22px;
 	text-transform: uppercase;
 	margin: 0 0 5px;

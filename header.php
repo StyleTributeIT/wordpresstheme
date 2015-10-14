@@ -24,6 +24,8 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/contrib/js/html5.js"></script>
 	<![endif]-->
+	<link rel="icon" href="https://styletribute.com/media/favicon/default/favicon.jpg" type="image/x-icon" />
+	<link rel="shortcut icon" href="https://styletribute.com/media/favicon/default/favicon.jpg" type="image/x-icon" />
 	<?php wp_head(); ?>
 	<link href="//cloud.typography.com/6525732/792846/css/fonts.css" rel="stylesheet" type="text/css">
 </head>
@@ -45,25 +47,6 @@
 						</div>
 					</div>
 					<div class="action-menu col-md-3">
-						<table>
-							<tr>
-								<td class="bordered">
-									<a href="<?php echo checkout_url(); ?>" rel="nofollow" class="bag">My bag<b><?php echo get_quantity_products() ?></b></a>
-								</td>
-								<td>
-									<?php if ( ! customer_is_logged_in() ) : ?>
-										<?php // wp_login_url(get_permalink()); ?>
-										<?php // wp_registration_url(); ?>
-										<?php // wp_logout_url( get_permalink() ); ?>
-										<a href="/customer/account/" title="Log In" class="btn">Log In</a>
-										<a href="/customer/account/" title="Sign Up" class="btn">Sign Up</a>
-									<?php else : ?>
-										<a href="/customer/account/" title="My Account" class="btn">My Account</a>
-										<a href="/customer/account/logout/" title="LogOut" class="btn">LogOut</a>
-									<?php endif; ?>
-								</td>
-							</tr>
-						</table>
 					</div>
 				</div>
 			</div>

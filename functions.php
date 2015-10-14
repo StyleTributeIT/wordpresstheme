@@ -245,37 +245,7 @@ function show_content_without_magento_products($content)
     echo preg_replace('/.+magento end show/','',str_replace(array("\n","\r"),'', $content));
 }
 
-function get_quantity_products()
-{
-    return (int)Mage::getModel('checkout/cart')->getSummaryQtyFromCookie();
-}
-
-function customer_is_logged_in()
-{
-    return OpsWay_WPBlog_Model_Customer_Session::isLoggedInFromCookie();
-}
-
-function customer_logout_url()
-{
-    return '/customer/account/logout/';
-}
-
-function customer_login_url()
-{
-    return '/#login';
-}
-
-function customer_signup_url()
-{
-    return '/#signup';
-}
-
-function checkout_url()
-{
-    return '/checkout/onepage/';
-}
-
 function subscribe_form_action()
 {
-    return '/newsletter/subscriber/new/';
+    return 'https://styletribute.com/newsletter/subscriber/new/';
 }
